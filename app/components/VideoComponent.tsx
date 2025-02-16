@@ -48,11 +48,13 @@ export default function VideoComponent({ video }: { video: IVideo }) {
         </p>
 
         <div className="flex items-center gap-2">
-        <LikeButton
-          videoId={video._id.toString()}
-          initialLikes={video.likes.length}
-          initialIsLiked={isLiked}
-        />
+        {video._id && (
+          <LikeButton
+            videoId={video._id.toString()}
+            initialLikes={video.likes.length}
+            initialIsLiked={isLiked}
+          />
+        )}
       </div>
 
       </CardContent>

@@ -1,10 +1,13 @@
-# Crescendo 🎵
+# LEGATO 🎵
 
-A modern platform for musicians to share performances, collaborate, and grow their audience. Built with Next.js 14, Tailwind CSS, and shadcn/ui components.
+A modern platform for musicians to share performances, collaborate, and learn from videos with concurrent notes rendering. Built with Next.js 14, Tailwind CSS, and shadcn/ui components.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+
+### Live Link
+[www.legato.live](https://www.legato.live)
 
 ## 🚀 Features
 
@@ -26,22 +29,21 @@ A modern platform for musicians to share performances, collaborate, and grow the
 - **Authentication**: NextAuth.js
 - **Media Management**: ImageKit
 - **Database**: MongoDB
-- **Deployment**: 
+- **Deployment**: Vercel
 
 ## 📦 Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/satvikx/crescendo.git
+git clone https://github.com/satvikx/legato.git
 
 # Navigate to project directory
-cd crescendo
+cd legato
 
 # Install dependencies
 npm install
 
 # Set up environment variables
-cp .env.example .env.local
 
 # Run the development server
 npm run dev
@@ -66,7 +68,7 @@ NEXT_PUBLIC_URL_ENDPOINT=your-url-endpoint
 ## 🎯 Core Features
 
 ### Authentication
-- Multi-provider authentication (Google, Email)
+- NextAuth authentication 
 - Protected routes and API endpoints
 - Persistent user sessions
 
@@ -104,4 +106,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📬 Contact
 
-Project Link: [https://github.com/satviks/crescendo](https://github.com/satvikx/crescendo)
+Project Link: [https://github.com/satvikx/Legato](https://github.com/satvikx/LEGATO)
