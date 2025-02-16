@@ -47,6 +47,15 @@ class ApiClient {
       body: videoData,
     });
   }
+
+  async likeVideo(id: string) {
+    return this.fetch<{ message: string; likes: number }>(
+      `/videos/${id}/like`,
+      {
+        method: 'POST'
+      }
+    );
+  }
 }
 
 export const apiClient = new ApiClient();

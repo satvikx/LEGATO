@@ -17,6 +17,8 @@ export interface IVideo {
     width: number;
     quality?: number;
   };
+  pdfUrl?: string;
+  likes: string[]; // Array of user IDs who liked the video
 }
 
 const videoSchema = new Schema<IVideo>(
@@ -31,6 +33,8 @@ const videoSchema = new Schema<IVideo>(
       width: { type: Number, default: VIDEO_DIMENSIONS.width },
       quality: { type: Number, min: 1, max: 100 },
     },
+    pdfUrl: { type: String },
+    likes: [{ type: Schema.Types.ObjectId, ref: 'User' , default: []}] // Store user IDs
   },
   { timestamps: true }
 );
