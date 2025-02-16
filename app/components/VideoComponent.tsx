@@ -9,7 +9,7 @@ import { useSession } from "next-auth/react";
 
 export default function VideoComponent({ video }: { video: IVideo }) {
   const { data: session } = useSession();
-  const isLiked = video.likes.includes(session?.user?.id as string);
+  const isLiked = video.likes?.includes(session?.user?.id as string) ?? false;
   return (
     <Card className="max-w-xs overflow-hidden transition-all duration-300 hover:shadow-lg">
       <CardHeader className="p-0">
@@ -51,7 +51,7 @@ export default function VideoComponent({ video }: { video: IVideo }) {
         {video._id && (
           <LikeButton
             videoId={video._id.toString()}
-            initialLikes={video.likes.length}
+            initialLikes={video.likes?.length ?? 0}
             initialIsLiked={isLiked}
           />
         )}

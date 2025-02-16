@@ -18,7 +18,7 @@ export interface IVideo {
     quality?: number;
   };
   pdfUrl?: string;
-  likes: string[]; // Array of user IDs who liked the video
+  likes?: string[]; // Array of user IDs who liked the video
 }
 
 const videoSchema = new Schema<IVideo>(
