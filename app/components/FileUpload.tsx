@@ -22,6 +22,7 @@ export default function FileUpload({
   const onError = (err: { message: string }) => {
     setError(err.message);
     setUploading(false);
+    console.error(err);
   };
 
   const handleSuccess = (response: IKUploadResponse) => {

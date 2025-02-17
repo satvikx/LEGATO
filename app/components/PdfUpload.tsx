@@ -4,7 +4,7 @@ import { IKUpload } from "imagekitio-next";
 import { IKUploadResponse } from "imagekitio-next/dist/types/components/IKUpload/props";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
-import { useSession, signIn } from "next-auth/react";
+// import { useSession, signIn } from "next-auth/react";
 
 interface FileUploadProps {
   onSuccess: (res: IKUploadResponse) => void;
@@ -17,13 +17,14 @@ export default function PDFFileUpload({
   onProgress,
   fileType = "pdf",
 }: FileUploadProps) {
-  const { data: session, status } = useSession();
+  // const { data: session, status } = useSession();
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const onError = (err: { message: string }) => {
     setError(err.message);
     setUploading(false);
+    console.error(err);
   };
 
   const handleSuccess = (response: IKUploadResponse) => {
@@ -35,6 +36,7 @@ export default function PDFFileUpload({
   const handleStartUpload = () => {
     setUploading(true);
     setError(null);
+    console.log("Uploading...");
   };
 
   const handleProgress = (evt: ProgressEvent) => {
@@ -61,18 +63,18 @@ export default function PDFFileUpload({
     return true;
   };
 
-  if (status === "loading") {
-    return <div>Loading...</div>;
-  }
+  // if (status === "loading") {
+  //   return <div>Loading...</div>;
+  // }
 
-  if (!session) {
-    return (
-      <div>
-        <p>You must be logged in to upload a PDF file.</p>
-        <button onClick={() => signIn()}>Sign in</button>
-      </div>
-    );
-  }
+  // if (!session) {
+  //   return (
+  //     <div>
+  //       <p>You must be logged in to upload a PDF file.</p>
+  //       <button onClick={() => signIn()}>Sign in</button>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="space-y-2">

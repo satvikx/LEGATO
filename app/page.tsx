@@ -38,10 +38,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
-    <main className="container mx-auto ">
-      <section className="w-full py-8 md:py-20 lg:py-28 xl:py-40 bg-black text-white">
-          <div className="container px-4 md:px-6">
+    <div>
+      <section className="py-20 md:py-20 lg:py-28 xl:py-40 bg-black text-white">
+          <div className="px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
@@ -73,7 +72,6 @@ export default function Home() {
       <h3 className="text-1xl mb-6">Your music, your universe</h3> */}
       <div id="target-section"><VideoFeed videos={videos} /></div>
       <div><BottomSection/></div>
-    </main>
     </div>
   );
 }
