@@ -47,7 +47,7 @@ export default function Home() {
                 Your <span className="bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient">Music</span>, Your Universe
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
-                  Upload, Share, and Discover Amazing Music and Learn from  Artists around the Globe.
+                Create, Share, Evolve: Upload Your Sound, Connect with Artists, and Master Music Through Notes!
                 </p>
               </div>
               <div className="space-x-4">
@@ -62,7 +62,7 @@ export default function Home() {
                     window.location.href = "/watch";
                   }
                 }}
-                >Explore ✨</Button>
+                >Learn from Artists ✨</Button>
                 <Link href={`/upload`}><Button variant="outline" className="text-black dark:text-white">Showcase Your Talent!</Button></Link>
               </div>
             </div>

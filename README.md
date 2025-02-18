@@ -1,6 +1,6 @@
 # LEGATO 🎵
 
-A modern platform for musicians to share performances, collaborate, and learn from videos with concurrent notes rendering. Built with Next.js 14, Tailwind CSS, and shadcn/ui components.
+A modern platform for musicians to share performances, collaborate, and learn from videos with concurrent notes rendering. Built with Next.js 14, Imagekit, Tailwind CSS, and shadcn/ui components.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
@@ -13,6 +13,7 @@ A modern platform for musicians to share performances, collaborate, and learn fr
 
 - **Secure Authentication** via NextAuth.js with multiple provider support
 - **High-Performance Media Handling** using ImageKit for optimal image and video delivery
+- **Collaborative Learning** implementing convinient notes rendering along with videos
 - **Real-time Engagement** with dynamic likes, comments, and sharing
 - **Responsive Design** built with shadcn/ui components and Tailwind CSS
 - **Advanced Video Features**:
@@ -77,14 +78,25 @@ NEXT_PUBLIC_URL_ENDPOINT=your-url-endpoint
 - Secure file upload with ImageKit
 - Custom video player with musician-specific features
 
+### Learn with Notes
+- Side-by-side PDF rendering for quick reference
+- Take your own notes feature
+- Like your Favourite Creator
+
 ### User Experience
 - Dark/Light mode support
 - Responsive design for all devices
 - Accessible UI components with shadcn/ui
 
+## Future Enhancements
+- Real time Collaboration (using liveblocks)
+- Virtual Jam Rooms : Video Chat and Live Streaming
+- Digital sheet music marketplace
+- ___I'm open for more Suggestions...___ :)
+
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions! Please see [Contributing Guide](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project) for details.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -92,11 +104,8 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+## 🙏 Acknowledgments/Documentations
 
 - [Next.js](https://nextjs.org/)
 - [shadcn/ui](https://ui.shadcn.com/)
@@ -107,3 +116,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📬 Contact
 
 Project Link: [https://github.com/satvikx/Legato](https://github.com/satvikx/LEGATO)
+Email: [satvik.shrivastava.exe@gmail.com](mailto:satvik.shrivastava.exe@gmail.com) 

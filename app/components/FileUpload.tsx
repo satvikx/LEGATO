@@ -14,7 +14,7 @@ interface FileUploadProps {
 export default function FileUpload({
   onSuccess,
   onProgress,
-  fileType = "image",
+  fileType = "video",
 }: FileUploadProps) {
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -49,8 +49,8 @@ export default function FileUpload({
         setError("Please upload a valid video file");
         return false;
       }
-      if (file.size > 100 * 1024 * 1024) {
-        setError("Video size must be less than 100MB");
+      if (file.size > 20 * 1024 * 1024) {
+        setError("Currently Files less than 20MB are supported");
         return false;
       }
     } else {
