@@ -1,13 +1,13 @@
 # LEGATO 🎵
 
-A modern platform for musicians to share performances, collaborate, and learn from videos with concurrent notes rendering. Built with Next.js 14, Imagekit, Tailwind CSS, and shadcn/ui components.
+A modern social-media platform for musicians to share performances, collaborate, and learn from videos with concurrent notes rendering. Built with Next.js 14, Imagekit, Tailwind CSS, and shadcn/ui components. 
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 
 ### Live Link
-[www.legato.live](https://www.legato.live)
+[www.legato.social](https://www.legato.social)
 
 ## 🚀 Features
 
@@ -16,11 +16,6 @@ A modern platform for musicians to share performances, collaborate, and learn fr
 - **Collaborative Learning** implementing convinient notes rendering along with videos
 - **Real-time Engagement** with dynamic likes, comments, and sharing
 - **Responsive Design** built with shadcn/ui components and Tailwind CSS
-- **Advanced Video Features**:
-  - Multi-angle video playback
-  - Slow-motion practice mode
-  - Collaborative split-screen performances
-  - Custom video filters for musicians
 
 ## 🛠️ Tech Stack
 
